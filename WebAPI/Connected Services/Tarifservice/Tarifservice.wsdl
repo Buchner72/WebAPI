@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Tarifservice" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://onlinerechner.muki.com/_service/Tarifservice.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://onlinerechner.muki.com/_service/Tarifservice.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://onlinerechner.muki.com/_service/Tarifservice.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Tarifservice" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ITarifservice_berechneMUKFP_InputMessage">
+    <wsdl:part name="parameters" element="tns:berechneMUKFP" />
+  </wsdl:message>
+  <wsdl:message name="ITarifservice_berechneMUKFP_OutputMessage">
+    <wsdl:part name="parameters" element="tns:berechneMUKFPResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITarifservice_berechneMUKUS_InputMessage">
+    <wsdl:part name="parameters" element="tns:berechneMUKUS" />
+  </wsdl:message>
+  <wsdl:message name="ITarifservice_berechneMUKUS_OutputMessage">
+    <wsdl:part name="parameters" element="tns:berechneMUKUSResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITarifservice_berechneMUKSOE_InputMessage">
+    <wsdl:part name="parameters" element="tns:berechneMUKSOE" />
+  </wsdl:message>
+  <wsdl:message name="ITarifservice_berechneMUKSOE_OutputMessage">
+    <wsdl:part name="parameters" element="tns:berechneMUKSOEResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITarifservice_berechneMUKWA_InputMessage">
+    <wsdl:part name="parameters" element="tns:berechneMUKWA" />
+  </wsdl:message>
+  <wsdl:message name="ITarifservice_berechneMUKWA_OutputMessage">
+    <wsdl:part name="parameters" element="tns:berechneMUKWAResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITarifservice_berechneMUKMT_InputMessage">
+    <wsdl:part name="parameters" element="tns:berechneMUKMT" />
+  </wsdl:message>
+  <wsdl:message name="ITarifservice_berechneMUKMT_OutputMessage">
+    <wsdl:part name="parameters" element="tns:berechneMUKMTResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITarifservice_berechneMUKPFE_InputMessage">
+    <wsdl:part name="parameters" element="tns:berechneMUKPFE" />
+  </wsdl:message>
+  <wsdl:message name="ITarifservice_berechneMUKPFE_OutputMessage">
+    <wsdl:part name="parameters" element="tns:berechneMUKPFEResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITarifservice_berechneMUKUnfall_InputMessage">
+    <wsdl:part name="parameters" element="tns:berechneMUKUnfall" />
+  </wsdl:message>
+  <wsdl:message name="ITarifservice_berechneMUKUnfall_OutputMessage">
+    <wsdl:part name="parameters" element="tns:berechneMUKUnfallResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITarifservice_berechneMUKUK_InputMessage">
+    <wsdl:part name="parameters" element="tns:berechneMUKUK" />
+  </wsdl:message>
+  <wsdl:message name="ITarifservice_berechneMUKUK_OutputMessage">
+    <wsdl:part name="parameters" element="tns:berechneMUKUKResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITarifservice_calcKFZHaftpflicht201502_InputMessage">
+    <wsdl:part name="parameters" element="tns:calcKFZHaftpflicht201502" />
+  </wsdl:message>
+  <wsdl:message name="ITarifservice_calcKFZHaftpflicht201502_OutputMessage">
+    <wsdl:part name="parameters" element="tns:calcKFZHaftpflicht201502Response" />
+  </wsdl:message>
+  <wsdl:message name="ITarifservice_calcKFZKasko201502_InputMessage">
+    <wsdl:part name="parameters" element="tns:calcKFZKasko201502" />
+  </wsdl:message>
+  <wsdl:message name="ITarifservice_calcKFZKasko201502_OutputMessage">
+    <wsdl:part name="parameters" element="tns:calcKFZKasko201502Response" />
+  </wsdl:message>
+  <wsdl:message name="ITarifservice_calcKFZRechtsschutz201502_InputMessage">
+    <wsdl:part name="parameters" element="tns:calcKFZRechtsschutz201502" />
+  </wsdl:message>
+  <wsdl:message name="ITarifservice_calcKFZRechtsschutz201502_OutputMessage">
+    <wsdl:part name="parameters" element="tns:calcKFZRechtsschutz201502Response" />
+  </wsdl:message>
+  <wsdl:message name="ITarifservice_calcKFZInsassenunfall201502_InputMessage">
+    <wsdl:part name="parameters" element="tns:calcKFZInsassenunfall201502" />
+  </wsdl:message>
+  <wsdl:message name="ITarifservice_calcKFZInsassenunfall201502_OutputMessage">
+    <wsdl:part name="parameters" element="tns:calcKFZInsassenunfall201502Response" />
+  </wsdl:message>
+  <wsdl:message name="ITarifservice_calcEigenheimHaushalt_InputMessage">
+    <wsdl:part name="parameters" element="tns:calcEigenheimHaushalt" />
+  </wsdl:message>
+  <wsdl:message name="ITarifservice_calcEigenheimHaushalt_OutputMessage">
+    <wsdl:part name="parameters" element="tns:calcEigenheimHaushaltResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITarifservice_calcGebaeudeEinrichtungBetrieb_InputMessage">
+    <wsdl:part name="parameters" element="tns:calcGebaeudeEinrichtungBetrieb" />
+  </wsdl:message>
+  <wsdl:message name="ITarifservice_calcGebaeudeEinrichtungBetrieb_OutputMessage">
+    <wsdl:part name="parameters" element="tns:calcGebaeudeEinrichtungBetriebResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITarifservice_calcRechtsschutz_InputMessage">
+    <wsdl:part name="parameters" element="tns:calcRechtsschutz" />
+  </wsdl:message>
+  <wsdl:message name="ITarifservice_calcRechtsschutz_OutputMessage">
+    <wsdl:part name="parameters" element="tns:calcRechtsschutzResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ITarifservice">
+    <wsdl:operation name="berechneMUKFP">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITarifservice/berechneMUKFP" message="tns:ITarifservice_berechneMUKFP_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITarifservice/berechneMUKFPResponse" message="tns:ITarifservice_berechneMUKFP_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="berechneMUKUS">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITarifservice/berechneMUKUS" message="tns:ITarifservice_berechneMUKUS_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITarifservice/berechneMUKUSResponse" message="tns:ITarifservice_berechneMUKUS_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="berechneMUKSOE">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITarifservice/berechneMUKSOE" message="tns:ITarifservice_berechneMUKSOE_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITarifservice/berechneMUKSOEResponse" message="tns:ITarifservice_berechneMUKSOE_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="berechneMUKWA">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITarifservice/berechneMUKWA" message="tns:ITarifservice_berechneMUKWA_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITarifservice/berechneMUKWAResponse" message="tns:ITarifservice_berechneMUKWA_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="berechneMUKMT">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITarifservice/berechneMUKMT" message="tns:ITarifservice_berechneMUKMT_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITarifservice/berechneMUKMTResponse" message="tns:ITarifservice_berechneMUKMT_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="berechneMUKPFE">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITarifservice/berechneMUKPFE" message="tns:ITarifservice_berechneMUKPFE_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITarifservice/berechneMUKPFEResponse" message="tns:ITarifservice_berechneMUKPFE_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="berechneMUKUnfall">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITarifservice/berechneMUKUnfall" message="tns:ITarifservice_berechneMUKUnfall_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITarifservice/berechneMUKUnfallResponse" message="tns:ITarifservice_berechneMUKUnfall_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="berechneMUKUK">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITarifservice/berechneMUKUK" message="tns:ITarifservice_berechneMUKUK_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITarifservice/berechneMUKUKResponse" message="tns:ITarifservice_berechneMUKUK_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="calcKFZHaftpflicht201502">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITarifservice/calcKFZHaftpflicht201502" message="tns:ITarifservice_calcKFZHaftpflicht201502_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITarifservice/calcKFZHaftpflicht201502Response" message="tns:ITarifservice_calcKFZHaftpflicht201502_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="calcKFZKasko201502">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITarifservice/calcKFZKasko201502" message="tns:ITarifservice_calcKFZKasko201502_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITarifservice/calcKFZKasko201502Response" message="tns:ITarifservice_calcKFZKasko201502_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="calcKFZRechtsschutz201502">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITarifservice/calcKFZRechtsschutz201502" message="tns:ITarifservice_calcKFZRechtsschutz201502_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITarifservice/calcKFZRechtsschutz201502Response" message="tns:ITarifservice_calcKFZRechtsschutz201502_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="calcKFZInsassenunfall201502">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITarifservice/calcKFZInsassenunfall201502" message="tns:ITarifservice_calcKFZInsassenunfall201502_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITarifservice/calcKFZInsassenunfall201502Response" message="tns:ITarifservice_calcKFZInsassenunfall201502_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="calcEigenheimHaushalt">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITarifservice/calcEigenheimHaushalt" message="tns:ITarifservice_calcEigenheimHaushalt_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITarifservice/calcEigenheimHaushaltResponse" message="tns:ITarifservice_calcEigenheimHaushalt_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="calcGebaeudeEinrichtungBetrieb">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITarifservice/calcGebaeudeEinrichtungBetrieb" message="tns:ITarifservice_calcGebaeudeEinrichtungBetrieb_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITarifservice/calcGebaeudeEinrichtungBetriebResponse" message="tns:ITarifservice_calcGebaeudeEinrichtungBetrieb_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="calcRechtsschutz">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITarifservice/calcRechtsschutz" message="tns:ITarifservice_calcRechtsschutz_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITarifservice/calcRechtsschutzResponse" message="tns:ITarifservice_calcRechtsschutz_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ITarifservice" type="tns:ITarifservice">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="berechneMUKFP">
+      <soap:operation soapAction="http://tempuri.org/ITarifservice/berechneMUKFP" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="berechneMUKUS">
+      <soap:operation soapAction="http://tempuri.org/ITarifservice/berechneMUKUS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="berechneMUKSOE">
+      <soap:operation soapAction="http://tempuri.org/ITarifservice/berechneMUKSOE" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="berechneMUKWA">
+      <soap:operation soapAction="http://tempuri.org/ITarifservice/berechneMUKWA" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="berechneMUKMT">
+      <soap:operation soapAction="http://tempuri.org/ITarifservice/berechneMUKMT" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="berechneMUKPFE">
+      <soap:operation soapAction="http://tempuri.org/ITarifservice/berechneMUKPFE" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="berechneMUKUnfall">
+      <soap:operation soapAction="http://tempuri.org/ITarifservice/berechneMUKUnfall" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="berechneMUKUK">
+      <soap:operation soapAction="http://tempuri.org/ITarifservice/berechneMUKUK" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="calcKFZHaftpflicht201502">
+      <soap:operation soapAction="http://tempuri.org/ITarifservice/calcKFZHaftpflicht201502" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="calcKFZKasko201502">
+      <soap:operation soapAction="http://tempuri.org/ITarifservice/calcKFZKasko201502" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="calcKFZRechtsschutz201502">
+      <soap:operation soapAction="http://tempuri.org/ITarifservice/calcKFZRechtsschutz201502" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="calcKFZInsassenunfall201502">
+      <soap:operation soapAction="http://tempuri.org/ITarifservice/calcKFZInsassenunfall201502" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="calcEigenheimHaushalt">
+      <soap:operation soapAction="http://tempuri.org/ITarifservice/calcEigenheimHaushalt" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="calcGebaeudeEinrichtungBetrieb">
+      <soap:operation soapAction="http://tempuri.org/ITarifservice/calcGebaeudeEinrichtungBetrieb" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="calcRechtsschutz">
+      <soap:operation soapAction="http://tempuri.org/ITarifservice/calcRechtsschutz" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Tarifservice">
+    <wsdl:port name="BasicHttpBinding_ITarifservice" binding="tns:BasicHttpBinding_ITarifservice">
+      <soap:address location="http://onlinerechner.muki.com/_service/Tarifservice.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

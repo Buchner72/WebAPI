@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Tarifservice" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Tarifservice" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="BerechnungMUKFPType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="cntCurrentErwachsen" type="xs:int" />
+      <xs:element minOccurs="0" name="cntCurrentKind" type="xs:int" />
+      <xs:element minOccurs="0" name="cntTotalErwachsen" type="xs:int" />
+      <xs:element minOccurs="0" name="cntTotalKind" type="xs:int" />
+      <xs:element minOccurs="0" name="isErwachsen" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BerechnungMUKFPType" nillable="true" type="tns:BerechnungMUKFPType" />
+  <xs:complexType name="ResultatMUKKVType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BruttoPraemieMonat" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultatMUKKVType" nillable="true" type="tns:ResultatMUKKVType" />
+  <xs:complexType name="BerechnungMUKUSType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="cntSomeInteger" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BerechnungMUKUSType" nillable="true" type="tns:BerechnungMUKUSType" />
+  <xs:complexType name="BerechnungMUKSOEType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Bundeslandgruppe" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="alter" type="xs:int" />
+      <xs:element minOccurs="0" name="cntCurrentErwachsen" type="xs:int" />
+      <xs:element minOccurs="0" name="cntCurrentKind" type="xs:int" />
+      <xs:element minOccurs="0" name="cntTotalErwachsen" type="xs:int" />
+      <xs:element minOccurs="0" name="cntTotalKind" type="xs:int" />
+      <xs:element minOccurs="0" name="isBuendelrabatt" type="xs:boolean" />
+      <xs:element minOccurs="0" name="isErwachsen" type="xs:boolean" />
+      <xs:element minOccurs="0" name="isPartnerrabatt" type="xs:boolean" />
+      <xs:element minOccurs="0" name="isPartnerrabattSOEE" type="xs:boolean" />
+      <xs:element minOccurs="0" name="isSOEE" type="xs:boolean" />
+      <xs:element minOccurs="0" name="tarif" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BerechnungMUKSOEType" nillable="true" type="tns:BerechnungMUKSOEType" />
+  <xs:complexType name="BerechnungMUKWAType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="alter" type="xs:int" />
+      <xs:element minOccurs="0" name="cntCurrentErwachsen" type="xs:int" />
+      <xs:element minOccurs="0" name="cntCurrentKind" type="xs:int" />
+      <xs:element minOccurs="0" name="cntTotalErwachsen" type="xs:int" />
+      <xs:element minOccurs="0" name="cntTotalKind" type="xs:int" />
+      <xs:element minOccurs="0" name="isBuendelrabatt" type="xs:boolean" />
+      <xs:element minOccurs="0" name="isErwachsen" type="xs:boolean" />
+      <xs:element minOccurs="0" name="isPartnerrabatt" type="xs:boolean" />
+      <xs:element minOccurs="0" name="tarif" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BerechnungMUKWAType" nillable="true" type="tns:BerechnungMUKWAType" />
+  <xs:complexType name="BerechnungMUKMTType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="alter" type="xs:int" />
+      <xs:element minOccurs="0" name="cntCurrentErwachsen" type="xs:int" />
+      <xs:element minOccurs="0" name="cntCurrentKind" type="xs:int" />
+      <xs:element minOccurs="0" name="cntTotalErwachsen" type="xs:int" />
+      <xs:element minOccurs="0" name="cntTotalKind" type="xs:int" />
+      <xs:element minOccurs="0" name="isErwachsen" type="xs:boolean" />
+      <xs:element minOccurs="0" name="isPartnerrabatt" type="xs:boolean" />
+      <xs:element minOccurs="0" name="tageleistung" type="xs:int" />
+      <xs:element minOccurs="0" name="tarif" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BerechnungMUKMTType" nillable="true" type="tns:BerechnungMUKMTType" />
+  <xs:complexType name="BerechnungMUKPFEType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="alter" type="xs:int" />
+      <xs:element minOccurs="0" name="cntCurrentErwachsen" type="xs:int" />
+      <xs:element minOccurs="0" name="cntCurrentKind" type="xs:int" />
+      <xs:element minOccurs="0" name="cntTotalErwachsen" type="xs:int" />
+      <xs:element minOccurs="0" name="cntTotalKind" type="xs:int" />
+      <xs:element minOccurs="0" name="isErwachsen" type="xs:boolean" />
+      <xs:element minOccurs="0" name="isPartnerrabatt" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BerechnungMUKPFEType" nillable="true" type="tns:BerechnungMUKPFEType" />
+  <xs:complexType name="BerechnungMUKUnfallType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="amateursportgruppe" type="xs:int" />
+      <xs:element minOccurs="0" name="berufsgruppeIIZuschlag" type="xs:boolean" />
+      <xs:element minOccurs="0" name="invaliditaet" type="xs:double" />
+      <xs:element minOccurs="0" name="isErhoehteGliedertaxe" type="xs:boolean" />
+      <xs:element minOccurs="0" name="isErwachsen" type="xs:boolean" />
+      <xs:element minOccurs="0" name="isFussball" type="xs:boolean" />
+      <xs:element minOccurs="0" name="isPartner" type="xs:boolean" />
+      <xs:element minOccurs="0" name="kosmetischeOP" type="xs:boolean" />
+      <xs:element minOccurs="0" name="rente35" type="xs:double" />
+      <xs:element minOccurs="0" name="rente50" type="xs:double" />
+      <xs:element minOccurs="0" name="schmerzensgeld" type="xs:boolean" />
+      <xs:element minOccurs="0" name="sonderrisken" type="xs:int" />
+      <xs:element minOccurs="0" name="sonderrisken_invaliditaet" type="xs:double" />
+      <xs:element minOccurs="0" name="sonderrisken_unfalltod" type="xs:double" />
+      <xs:element minOccurs="0" name="spitalgeld" type="xs:double" />
+      <xs:element minOccurs="0" name="tagegeld" type="xs:double" />
+      <xs:element minOccurs="0" name="tarif" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="tarif_mutation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="unfallPlus" type="xs:boolean" />
+      <xs:element minOccurs="0" name="unfallkosten" type="xs:double" />
+      <xs:element minOccurs="0" name="unfalltod" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BerechnungMUKUnfallType" nillable="true" type="tns:BerechnungMUKUnfallType" />
+  <xs:complexType name="ResultatMUKUnfallType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BruttoPraemieAmateursportgruppe" type="xs:decimal" />
+      <xs:element minOccurs="0" name="BruttoPraemieBerufsgruppII" type="xs:decimal" />
+      <xs:element minOccurs="0" name="BruttoPraemieFussball" type="xs:decimal" />
+      <xs:element minOccurs="0" name="BruttoPraemieInvaliditaetMonat" type="xs:decimal" />
+      <xs:element minOccurs="0" name="BruttoPraemieKosmetischeOPMonat" type="xs:decimal" />
+      <xs:element minOccurs="0" name="BruttoPraemieMonat" type="xs:decimal" />
+      <xs:element minOccurs="0" name="BruttoPraemieRente35" type="xs:decimal" />
+      <xs:element minOccurs="0" name="BruttoPraemieRente50" type="xs:decimal" />
+      <xs:element minOccurs="0" name="BruttoPraemieSchmerzensgeldMonat" type="xs:decimal" />
+      <xs:element minOccurs="0" name="BruttoPraemieSonderrisken" type="xs:decimal" />
+      <xs:element minOccurs="0" name="BruttoPraemieSpitalgeldMonat" type="xs:decimal" />
+      <xs:element minOccurs="0" name="BruttoPraemieTagegeldMonat" type="xs:decimal" />
+      <xs:element minOccurs="0" name="BruttoPraemieUnfallPlus" type="xs:decimal" />
+      <xs:element minOccurs="0" name="BruttoPraemieUnfallkostenMonat" type="xs:decimal" />
+      <xs:element minOccurs="0" name="BruttoPraemieUnfalltodMonat" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultatMUKUnfallType" nillable="true" type="tns:ResultatMUKUnfallType" />
+  <xs:complexType name="BerechnungMUKUKType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="cntCurrentKind" type="xs:int" />
+      <xs:element minOccurs="0" name="cntTotalKind" type="xs:int" />
+      <xs:element minOccurs="0" name="tarif" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BerechnungMUKUKType" nillable="true" type="tns:BerechnungMUKUKType" />
+  <xs:complexType name="ResultatMUKUKType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BruttoPraemieMonat" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultatMUKUKType" nillable="true" type="tns:ResultatMUKUKType" />
+  <xs:complexType name="pKFZHaftpflicht">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Antriebsart" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BonusMalus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ErstanmeldungAelter01011987" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Erstzulassung" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Gesamtgewicht" type="xs:int" />
+      <xs:element minOccurs="0" name="Geschwindigkeit" type="xs:int" />
+      <xs:element minOccurs="0" name="HasKat" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Hubraum" type="xs:int" />
+      <xs:element minOccurs="0" name="IsAntriebBenzin" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsAntriebDiesel" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsAntriebElektro" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsAntriebHybrid" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsFirmennutzung" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsOldtimer" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsSteuerbefreit" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsZahlungsweiseH" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsZahlungsweiseJ" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsZahlungsweiseM" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsZahlungsweiseQ" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Kat" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Klasse" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Leistung" type="xs:int" />
+      <xs:element minOccurs="0" name="Nutzlast" type="xs:int" />
+      <xs:element minOccurs="0" name="Plaetze" type="xs:int" />
+      <xs:element minOccurs="0" name="SitzplaetzeGroesser7" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Tarif" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VS" type="xs:int" />
+      <xs:element minOccurs="0" name="Verwendungszweck" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Wechselkennzeichen" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Zahlungsweise" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="pKFZHaftpflicht" nillable="true" type="tns:pKFZHaftpflicht" />
+  <xs:complexType name="rKFZHaftpflicht">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="MotorSteuer" type="xs:double" />
+      <xs:element minOccurs="0" name="MotorSteuerH" type="xs:double" />
+      <xs:element minOccurs="0" name="MotorSteuerJ" type="xs:double" />
+      <xs:element minOccurs="0" name="MotorSteuerM" type="xs:double" />
+      <xs:element minOccurs="0" name="MotorSteuerV" type="xs:double" />
+      <xs:element minOccurs="0" name="Praemie" type="xs:double" />
+      <xs:element minOccurs="0" name="VUXHaftpflichtAusgangspraemie" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="rKFZHaftpflicht" nillable="true" type="tns:rKFZHaftpflicht" />
+  <xs:complexType name="pKFZKasko">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BonusMalus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Fahrzeuggruppe" type="xs:int" />
+      <xs:element minOccurs="0" name="FiftyFifty" type="xs:boolean" />
+      <xs:element minOccurs="0" name="GAP" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Gefahrenklasse" type="xs:int" />
+      <xs:element minOccurs="0" name="IsFirmennutzung" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsListenpreis_Brutto" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsListenpreis_Netto" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsVorsteuerabzugberechtigt" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsZahlungsweiseH" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsZahlungsweiseJ" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsZahlungsweiseM" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsZahlungsweiseQ" type="xs:boolean" />
+      <xs:element minOccurs="0" name="KNT" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Klasse" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Listenpreis" type="xs:double" />
+      <xs:element minOccurs="0" name="SB320" type="xs:boolean" />
+      <xs:element minOccurs="0" name="SB480" type="xs:boolean" />
+      <xs:element minOccurs="0" name="SB880" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Sonderausstattung" type="xs:double" />
+      <xs:element minOccurs="0" name="Tarif" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="pKFZKasko" nillable="true" type="tns:pKFZKasko" />
+  <xs:complexType name="rKFZKasko">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="PraemieFiftyFifty" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieKNT" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieTarif" type="xs:double" />
+      <xs:element minOccurs="0" name="PramieGAP" type="xs:double" />
+      <xs:element minOccurs="0" name="TarifPraemieKasko" type="xs:double" />
+      <xs:element minOccurs="0" name="VUXKaskoAusgangspraemie" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="rKFZKasko" nillable="true" type="tns:rKFZKasko" />
+  <xs:complexType name="pKFZRechtsschutz">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="IsZahlungsweiseH" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsZahlungsweiseJ" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsZahlungsweiseM" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsZahlungsweiseQ" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="pKFZRechtsschutz" nillable="true" type="tns:pKFZRechtsschutz" />
+  <xs:complexType name="rKFZRechtsschutz">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Praemie" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="rKFZRechtsschutz" nillable="true" type="tns:rKFZRechtsschutz" />
+  <xs:complexType name="pKFZInsassenunfall">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="IsZahlungsweiseH" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsZahlungsweiseJ" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsZahlungsweiseM" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsZahlungsweiseQ" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="pKFZInsassenunfall" nillable="true" type="tns:pKFZInsassenunfall" />
+  <xs:complexType name="rKFZInsassenunfall">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Praemie" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="rKFZInsassenunfall" nillable="true" type="tns:rKFZInsassenunfall" />
+  <xs:complexType name="pEigenheimHaushalt">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Buendelrabatt" type="xs:boolean" />
+      <xs:element minOccurs="0" name="CntEigenheimHaushaltHunde" type="xs:int" />
+      <xs:element minOccurs="0" name="EigenheimBauherrnhaftpflicht_Baukosten" type="xs:double" />
+      <xs:element minOccurs="0" name="EigenheimTarif" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ErhoehungAufWertVS" type="xs:double" />
+      <xs:element minOccurs="0" name="HasNebengebaeudeKeller" type="xs:boolean" />
+      <xs:element minOccurs="0" name="HaushaltTarif" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Heizungskasko" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsEigenheimBauherrnhaftpflicht" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsEigenheimGrobeFahrlaessigkeit" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsEigenheimHaushaltHundehaftpflicht" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsEigenheimHeizungskasko" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsEigenheimHochwasserpaket" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsEigenheimSelbstbehalt" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsEigenheimSwimmingpoolpaket" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsEigenheimSwimmingpoolpaket_100" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsEigenheimSwimmingpoolpaket_25" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsEinfamilienhaus" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsErhoehungAufWert" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsHaushaltAlarmanlage" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsHaushaltAusschlussGlasbruch" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsHaushaltGrobeFahrlaessigkeit" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsHaushaltHeizungskasko" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsHaushaltHochwasserpaket" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsHaushaltPrivatehaftpflicht" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsHaushaltSelbstbehalt" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsHaushaltZuschlagUnbewohntAusserhalb" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsMehrfamilienhaus" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsStaendigBewohnt_ja" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsStaendigBewohnt_nein" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsVSEigenheimIndividuell" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsVSHaushaltIndividuell" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsVerbautesOrtsgebiet_ausserhalb" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsVerbautesOrtsgebiet_innerhalb" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsZweifamilienhaus" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Klasse" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VSEigenheimIndividuell_Hauptgebaeude" type="xs:double" />
+      <xs:element minOccurs="0" name="VSEigenheimIndividuell_Nebengebaeude" type="xs:double" />
+      <xs:element minOccurs="0" name="VSHaushaltIndividuell" type="xs:double" />
+      <xs:element minOccurs="0" name="VerbauteFlaecheErdgeschoss" type="xs:double" />
+      <xs:element minOccurs="0" name="VerbauteFlaecheKeller" type="xs:double" />
+      <xs:element minOccurs="0" name="VerbauteFlaecheMansarde" type="xs:double" />
+      <xs:element minOccurs="0" name="VerbauteFlaecheNebengebaude" type="xs:double" />
+      <xs:element minOccurs="0" name="VerbauteFlaecheObergeschoss1" type="xs:double" />
+      <xs:element minOccurs="0" name="VerbauteFlaecheObergeschoss2" type="xs:double" />
+      <xs:element minOccurs="0" name="Wohnnutzflaeche" type="xs:double" />
+      <xs:element minOccurs="0" name="Zahlungsweise_halbjahr" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Zahlungsweise_jahr" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Zahlungsweise_monat" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Zahlungsweise_quartal" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="pEigenheimHaushalt" nillable="true" type="tns:pEigenheimHaushalt" />
+  <xs:complexType name="rEigenheimHaushalt">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BerechnungsgrdlgEigenheimPraemie" type="xs:double" />
+      <xs:element minOccurs="0" name="BerechnungsgrdlgEigenheimVS" type="xs:double" />
+      <xs:element minOccurs="0" name="BerechnungsgrdlgHaushaltPraemie" type="xs:double" />
+      <xs:element minOccurs="0" name="BerechnungsgrdlgHaushaltVS" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieEigenheim" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieEigenheimAusdehnungHundehaftpflicht" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieEigenheimBauherrnhaftpflicht" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieEigenheimBuendelrabatt" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieEigenheimGrobeFahrlaessigkeit" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieEigenheimHauptgebaeude" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieEigenheimHeizungskasko" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieEigenheimNebengebaeude" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieEigenheimPraemiensume" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieEigenheimSelbstbehalt" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieEigenheimSwimmingpoolpaket" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieHaushalt" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieHaushaltAlarmanlage" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieHaushaltAusdehnungHundehaftpflicht" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieHaushaltAusschlussGlasbruch" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieHaushaltBasis" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieHaushaltBuendelrabatt" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieHaushaltErhoehungAufWert" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieHaushaltGrobeFahrlaessigkeit" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieHaushaltHeizungskasko" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieHaushaltPraemiensume" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieHaushaltSelbstbehalt" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieHaushaltUnbewohntAussen" type="xs:double" />
+      <xs:element minOccurs="0" name="VSEigenheim" type="xs:double" />
+      <xs:element minOccurs="0" name="VSEigenheimHauptgebaeude" type="xs:double" />
+      <xs:element minOccurs="0" name="VSEigenheimNebengebaeude" type="xs:double" />
+      <xs:element minOccurs="0" name="VSHaushalt" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="rEigenheimHaushalt" nillable="true" type="tns:rEigenheimHaushalt" />
+  <xs:complexType name="pGebaeudeEinrichtungBetrieb">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AllRiskBU" type="xs:double" />
+      <xs:element minOccurs="0" name="AutobahnvignetteVS" type="xs:double" />
+      <xs:element minOccurs="0" name="BahnmaessigeAnlagenAnzahl" type="xs:int" />
+      <xs:element minOccurs="0" name="BargeldWertpapierGutscheinBonVS" type="xs:double" />
+      <xs:element minOccurs="0" name="Bauart" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Belegflaeche" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BeraubungAusserhalbVersicherterRaeumlichkeitenVS" type="xs:double" />
+      <xs:element minOccurs="0" name="BeraubungInnerhalbVersicherterRaeumlichkeitenVS" type="xs:double" />
+      <xs:element minOccurs="0" name="Betriebsart_AllRisk" type="xs:double" />
+      <xs:element minOccurs="0" name="Betriebsart_AllRiskBU" type="xs:double" />
+      <xs:element minOccurs="0" name="Betriebsart_IsHandel" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Betriebsart_Sicherung" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Dachung" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Deckungsbeitrag12MonateVS" type="xs:double" />
+      <xs:element minOccurs="0" name="GebaeudeVS" type="xs:double" />
+      <xs:element minOccurs="0" name="Gebaeudebezeichung" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Gefahrenklasse_Eph" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Gefahrenklasse_Gfk" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="InhaltOeffentlicherWarenautomatenVS" type="xs:double" />
+      <xs:element minOccurs="0" name="IsAbholUndZustelldienstVonFahrzeugen" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsAbleitungsrohre" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsAlarmanlageAussenschutzVerglasung" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsAllmaehlichkeitsschaeden" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsAnspruchGesetzlicheVertreter" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsArbeitsunfall" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsAuslandsdeckungFuerEuropa" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsAuslandsdeckungWeltweit" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsAuslandsdienstreisenMietsachschaeden" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsAutobahnvignette" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsAutobahnvignette_BehaelterGeringerSicherheitsgrad" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsAutobahnvignette_BehaelterUnterFestemVerschluss" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsBahnmaessigeAnlagen" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsBargeldWertpapierGutscheinBon" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsBargeldWertpapierGutscheinBon_BehaelterGeringerSicherheitsgrad" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsBargeldWertpapierGutscheinBon_BehaelterMittlererSicherheitsgrad" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsBargeldWertpapierGutscheinBon_BehaelterMittlererSicherheitsgrad_GeldschrankSchlossschutzpanzer" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsBargeldWertpapierGutscheinBon_BehaelterMittlererSicherheitsgrad_MauersafeGapenzert250kg" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsBargeldWertpapierGutscheinBon_BehaelterMittlererSicherheitsgrad_MauersafeGepanzert" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsBargeldWertpapierGutscheinBon_BehaelterMittlererSicherheitsgrad_PultschrankEinsatzkasseMoebeltresor" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsBargeldWertpapierGutscheinBon_BehaelterUnterFestemVerschluss" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsBauhandwerk" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsBauherrnhaftpflicht" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsBeEntladenFremderFahrzeuge" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsBeraubungAusserhalbVersicherterRaeumlichkeiten" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsBeraubungAusserhalbVersicherterRaeumlichkeitenBoteMitBegleitung" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsBeraubungAusserhalbVersicherterRaeumlichkeitenBoteOhneBegleitung" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsBeraubungInnerhalbVersicherterRaeumlichkeiten" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsBewachteGarderobe" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsCrossLiability" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsDeckungsbeitrag12Monate" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsDiebstahlOderRaubVonInVerwahrungGenommenenFahrzeugen" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsDieselrauchgasmessung" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsEingestellteFahrzeugeArbeitnehmerBesucher" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsErweiterteDeckungProduktehaftpflicht" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsErweiterteDeckungProduktehaftpflicht100k" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsErweiterteDeckungProduktehaftpflicht200k" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsErweiterteDeckungProduktehaftpflicht300k" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsErweiterungRohrersatz" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsGarageServiceTankstelle" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsGastgewerbePakte" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsGesellschafterausschluss" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsGewerbePlus" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsGewerbePlusPraemienfreiMitversichert" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsGewerbsmaessigeVermietung" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsGlasfassade" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsGlasfassade1Seitig" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsGlasfassade2Seitig" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsGlasfassade3Seitig" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsGlasfassade4Seitig" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsGrundKeller" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsGrundstueckGebaeudeRaeumlichkeitFremdzweck" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsHausGrundbesitzHaftpflicht" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsHebebuehne" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsInhaltOeffentlicherWarenautomaten" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsKfzPaket" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsKfzPaketAufErstesRisiko" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsKfzPaketHagelnetz" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsKfzPaketSturmHagel" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsKfzPaketVS025k" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsKfzPaketVS050k" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsKfzPaketVS100k" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsKuehlgut" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsLeitungswasser" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsMehrkostenVersicherung12Monate" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsMietsachschaeden" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsMitversicherungSubunternehmer" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsNachbesserungsbegleitschaeden" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsNachdeckung" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsOeffentlicheVitrinen" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsPraemienpflichtigesZusatzpaket" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsReifenhandelVulkanisierbetriebeMitMontagetätigkeiten" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsRohbauversicherung" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsSchadensuchkosten" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsSchaedenAnFahrzeugenDurchBrandBlitzschlagExplosion" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsSchaedenAnKundenfahrzeugenAusserhalbDerBetriebsstaette" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsStaendigBewohntNacht" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsTaetigkeitenAnBeweglichenUndUnbeweglichenSachen" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsTank" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsTankstellenOhneServicetätigkeiten" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsTechnik" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsTechnikEinrichtung_Gr50" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsTechnikEinrichtung_Kl50" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsTechnikInfoDaten" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsTechnikLaptop" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsUmweltschaedenSanierungskosten" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsUmweltschaedenSanierungskosten150k" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsUmweltschaedenSanierungskosten300k" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsUnternehmenOhneEigenesPersonal" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsVerbautesBewohntesOrtsgebiet" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsVerlustAbhandenkommenSachenDerBeherbergungsgaeste" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsVermoegensschaedenDurchBehinderung" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsVermoegensschaedenDurchBehinderung015k" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsVermoegensschaedenDurchBehinderung030k" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsVermoegensschaedenDurchBehinderung050k" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsVermoegensschaedenDurchBehinderung100k" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsVermoegensschaedenDurchBehinderung150k" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsVernichtungVerlustKraftfahrzeugenBeherbergungsgaeste" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsVerwahrungVonBeweglichenSachen" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsWerkverkehr" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsWerkverkehr_VS05k" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsWerkverkehr_VS10k" type="xs:boolean" />
+      <xs:element minOccurs="0" name="KaufmaennischeTechnischeEinrichtung" type="xs:double" />
+      <xs:element minOccurs="0" name="KfzPaketVS" type="xs:double" />
+      <xs:element minOccurs="0" name="Klasse" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KuehlgutVS" type="xs:double" />
+      <xs:element minOccurs="0" name="LohnGehaltSumme" type="xs:double" />
+      <xs:element minOccurs="0" name="MehrkostenVersicherung12MonateVS" type="xs:double" />
+      <xs:element minOccurs="0" name="OeffentlicheVitrinenVS" type="xs:double" />
+      <xs:element minOccurs="0" name="PauschalversicherungSumme" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StockwerkUeberErdgeschoss" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Tank_BenzinSpiritusAzeton" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Tank_DieseloelHeizoelRohoelPetroleum" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Tank_ErdgasLeuchtgasPropangas" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Tank_SonstigeOele" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TechnikInfoDatenVS" type="xs:double" />
+      <xs:element minOccurs="0" name="TechnikLaptopVS" type="xs:double" />
+      <xs:element minOccurs="0" name="TechnikVS" type="xs:double" />
+      <xs:element minOccurs="0" name="Umsatz" type="xs:double" />
+      <xs:element minOccurs="0" name="VerlustAbhandenkommenSachenDerBeherbergungsgaesteAnzahlSchlafstellen" type="xs:int" />
+      <xs:element minOccurs="0" name="VernichtungVerlustKraftfahrzeugenBeherbergungsgaesteAnzahlSchlafstellen" type="xs:int" />
+      <xs:element minOccurs="0" name="Versicherungsart" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Versicherungsdauer" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="WarenVorrat" type="xs:double" />
+      <xs:element minOccurs="0" name="Zahlungsweise_halbjahr" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Zahlungsweise_jahr" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Zahlungsweise_monat" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Zahlungsweise_quartal" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="pGebaeudeEinrichtungBetrieb" nillable="true" type="tns:pGebaeudeEinrichtungBetrieb" />
+  <xs:complexType name="rGebaeudeEinrichtungBetrieb">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="IsMindestpraemieBetrieb" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsMindestpraemieEinrichtungTarif" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsMindestpraemieGebaeudeTarif" type="xs:boolean" />
+      <xs:element minOccurs="0" name="PraemieBetrieb" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieBetriebAbholUndZustelldienstVonFahrzeugen" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieBetriebAllmaehlichkeitsschaeden" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieBetriebAnspruchGesetzlicheVertreter" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieBetriebArbeitsunfall" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieBetriebAuslandsdeckungWeltweit" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieBetriebAuslandsdienstreisenMietsachschaeden" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieBetriebBahnmaessigeAnlagen" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieBetriebBauherrnhaftpflicht" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieBetriebBeEntladenFremderFahrzeuge" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieBetriebBewachteGarderobe" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieBetriebCrossLiability" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieBetriebDeckungserweiterungen" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieBetriebDeckungserweiterungen150Prozent" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieBetriebDiebstahlOderRaubVonInVerwahrungGenommenenFahrzeugen" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieBetriebDieselrauchgasmessung" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieBetriebEingestellteFahrzeugeArbeitnehmerBesucher" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieBetriebErweiterteDeckungProduktehaftpflicht" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieBetriebGarageServiceTankstelle" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieBetriebGesellschafterausschluss" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieBetriebGewerbsmaessigeVermietung" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieBetriebGrundstueckGebaeudeRaeumlichkeitFremdzweck" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieBetriebHebebuehne" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieBetriebMietsachschaeden" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieBetriebMitversicherungSubunternehmer" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieBetriebNachbesserungsbegleitschaeden" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieBetriebNachdeckung" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieBetriebPauschalversicherung" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieBetriebReifenhandelVulkanisierbetriebeMitMontagetätigkeiten" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieBetriebSchaedenAnFahrzeugenDurchBrandBlitzschlagExplosion" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieBetriebSchaedenAnKundenfahrzeugenAusserhalbDerBetriebsstaette" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieBetriebTaetigkeitenAnBeweglichenUndUnbeweglichenSachen" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieBetriebTank" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieBetriebTank_BenzinSpiritusAzeton" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieBetriebTank_DieseloelHeizoelRohoelPetroleum" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieBetriebTank_ErdgasLeuchtgasPropangas" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieBetriebTank_M_BenzinSpiritusAzeton" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieBetriebTank_M_DieseloelHeizoelRohoelPetroleum" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieBetriebTank_M_ErdgasLeuchtgasPropangas" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieBetriebTank_M_SonstigeOele" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieBetriebTank_SonstigeOele" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieBetriebTankstellenOhneServicetätigkeiten" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieBetriebUmweltschaedenSanierungskosten" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieBetriebVerlustAbhandenkommenSachenDerBeherbergungsgaeste" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieBetriebVermoegensschaedenDurchBehinderung" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieBetriebVernichtungVerlustKraftfahrzeugenBeherbergungsgaesteAnzahlSchlafstellen" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieBetriebVerwahrungVonBeweglichenSachen" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieEinrichtung" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieEinrichtungAutobahnvignette" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieEinrichtungBarWertGutBon" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieEinrichtungBeraubungAusserhalbVersicherterRaeumlichkeiten" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieEinrichtungBeraubungInnerhalbVersicherterRaeumlichkeiten" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieEinrichtungDeckungsbeitrag12Monate" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieEinrichtungGastgewerbePaket" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieEinrichtungGewerbePlus" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieEinrichtungInhaltOeffentlicherWarenautomaten" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieEinrichtungKfzPaket" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieEinrichtungKuehlgut" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieEinrichtungMehrkostenVersicherung12Monate" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieEinrichtungOeffentlicheVitrinen" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieEinrichtungTarif" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieEinrichtungTarif_KaufmaennischeTechnischeEinrichtung" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieEinrichtungTarif_WarenVorrat" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieEinrichtungTechnik" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieEinrichtungTechnikInfoDaten" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieEinrichtungTechnikLaptop" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieEinrichtungWerkverkehr" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieEinrichtungZusatzleistung" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieGebaeude" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieGebaeudeAbleitungsrohre" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieGebaeudeErweiterungRohrersatz" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieGebaeudeGewerbePlus" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieGebaeudeGlasfassade" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieGebaeudeHausGrundbesitzHaftpflicht" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieGebaeudeLeitungswasser" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieGebaeudeRohbauversicherung" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieGebaeudeSchadensuchkosten" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieGebaeudeTarif" type="xs:double" />
+      <xs:element minOccurs="0" name="PraemieGebaeudeZusatzleistung" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="rGebaeudeEinrichtungBetrieb" nillable="true" type="tns:rGebaeudeEinrichtungBetrieb" />
+  <xs:complexType name="pRechtsschutz">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="IsErbFamiliePflegePatient" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsErmittlungStraf" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsFuehrungskraefte" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsGrundeigentumMietenrecht" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsMobbinBelaestigung" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsPatient" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsVermieter" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Tarif" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VermieterAnzahl" type="xs:int" />
+      <xs:element minOccurs="0" name="Zahlungsweise_halbjahr" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Zahlungsweise_jahr" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Zahlungsweise_monat" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Zahlungsweise_quartal" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="pRechtsschutz" nillable="true" type="tns:pRechtsschutz" />
+  <xs:complexType name="rRechtsschutz">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Praemie" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="rRechtsschutz" nillable="true" type="tns:rRechtsschutz" />
+</xs:schema>

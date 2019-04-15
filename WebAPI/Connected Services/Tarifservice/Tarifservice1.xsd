@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://onlinerechner.muki.com/_service/Tarifservice.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Tarifservice" />
+  <xs:element name="berechneMUKFP">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Tarifservice" minOccurs="0" name="BerechnungMUKFP" nillable="true" type="q1:BerechnungMUKFPType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="berechneMUKFPResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Tarifservice" minOccurs="0" name="berechneMUKFPResult" nillable="true" type="q2:ResultatMUKKVType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="berechneMUKUS">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Tarifservice" minOccurs="0" name="BerechnungMUKUS" nillable="true" type="q3:BerechnungMUKUSType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="berechneMUKUSResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/Tarifservice" minOccurs="0" name="berechneMUKUSResult" nillable="true" type="q4:ResultatMUKKVType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="berechneMUKSOE">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/Tarifservice" minOccurs="0" name="BerechnungMUKSOE" nillable="true" type="q5:BerechnungMUKSOEType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="berechneMUKSOEResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/Tarifservice" minOccurs="0" name="berechneMUKSOEResult" nillable="true" type="q6:ResultatMUKKVType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="berechneMUKWA">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/Tarifservice" minOccurs="0" name="BerechnungMUKWA" nillable="true" type="q7:BerechnungMUKWAType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="berechneMUKWAResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/Tarifservice" minOccurs="0" name="berechneMUKWAResult" nillable="true" type="q8:ResultatMUKKVType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="berechneMUKMT">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/Tarifservice" minOccurs="0" name="BerechnungMUKMT" nillable="true" type="q9:BerechnungMUKMTType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="berechneMUKMTResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/Tarifservice" minOccurs="0" name="berechneMUKMTResult" nillable="true" type="q10:ResultatMUKKVType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="berechneMUKPFE">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/Tarifservice" minOccurs="0" name="BerechnungMUKPFE" nillable="true" type="q11:BerechnungMUKPFEType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="berechneMUKPFEResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/Tarifservice" minOccurs="0" name="berechneMUKPFEResult" nillable="true" type="q12:ResultatMUKKVType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="berechneMUKUnfall">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/Tarifservice" minOccurs="0" name="BerehnungMUKUnfall" nillable="true" type="q13:BerechnungMUKUnfallType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="berechneMUKUnfallResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/Tarifservice" minOccurs="0" name="berechneMUKUnfallResult" nillable="true" type="q14:ResultatMUKUnfallType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="berechneMUKUK">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/Tarifservice" minOccurs="0" name="BerehnungMUKUK" nillable="true" type="q15:BerechnungMUKUKType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="berechneMUKUKResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/Tarifservice" minOccurs="0" name="berechneMUKUKResult" nillable="true" type="q16:ResultatMUKUKType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="calcKFZHaftpflicht201502">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/Tarifservice" minOccurs="0" name="pKFZHaftpflicht" nillable="true" type="q17:pKFZHaftpflicht" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="calcKFZHaftpflicht201502Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/Tarifservice" minOccurs="0" name="calcKFZHaftpflicht201502Result" nillable="true" type="q18:rKFZHaftpflicht" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="calcKFZKasko201502">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/Tarifservice" minOccurs="0" name="pKFZKasko" nillable="true" type="q19:pKFZKasko" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="calcKFZKasko201502Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/Tarifservice" minOccurs="0" name="calcKFZKasko201502Result" nillable="true" type="q20:rKFZKasko" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="calcKFZRechtsschutz201502">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/Tarifservice" minOccurs="0" name="pKFZRechtsschutz" nillable="true" type="q21:pKFZRechtsschutz" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="calcKFZRechtsschutz201502Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/Tarifservice" minOccurs="0" name="calcKFZRechtsschutz201502Result" nillable="true" type="q22:rKFZRechtsschutz" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="calcKFZInsassenunfall201502">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/Tarifservice" minOccurs="0" name="pKFZInsassenunfall" nillable="true" type="q23:pKFZInsassenunfall" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="calcKFZInsassenunfall201502Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/Tarifservice" minOccurs="0" name="calcKFZInsassenunfall201502Result" nillable="true" type="q24:rKFZInsassenunfall" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="calcEigenheimHaushalt">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/Tarifservice" minOccurs="0" name="pEigenheimHaushalt" nillable="true" type="q25:pEigenheimHaushalt" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="calcEigenheimHaushaltResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/Tarifservice" minOccurs="0" name="calcEigenheimHaushaltResult" nillable="true" type="q26:rEigenheimHaushalt" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="calcGebaeudeEinrichtungBetrieb">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q27="http://schemas.datacontract.org/2004/07/Tarifservice" minOccurs="0" name="pGebaeudeEinrichtungBetrieb" nillable="true" type="q27:pGebaeudeEinrichtungBetrieb" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="calcGebaeudeEinrichtungBetriebResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/Tarifservice" minOccurs="0" name="calcGebaeudeEinrichtungBetriebResult" nillable="true" type="q28:rGebaeudeEinrichtungBetrieb" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="calcRechtsschutz">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q29="http://schemas.datacontract.org/2004/07/Tarifservice" minOccurs="0" name="pRechtsschutz" nillable="true" type="q29:pRechtsschutz" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="calcRechtsschutzResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q30="http://schemas.datacontract.org/2004/07/Tarifservice" minOccurs="0" name="calcRechtsschutzResult" nillable="true" type="q30:rRechtsschutz" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
