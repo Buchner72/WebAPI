@@ -29,13 +29,19 @@ namespace WebAPI.Controllers
             //vn2.Vorname = "Michael";
             //vn2.Nachname = "Kieneswenger";
 
-            //Zum Test wird hier auf Service zugegriffen----------------------------
+           
             Double USMonatsPraemie = 0;
-            USMonatsPraemie = calcUS();
-            vn2.Vorname = "Unfallsonderklasse aus TARIFClient(Service): ";
-            vn2.Nachname = USMonatsPraemie.ToString() + " €";
-            //-----------------------------------------------------------------------
+            
 
+            USMonatsPraemie = 9.99;                     //Zum Test reicht manuell zugewiesene Zahl
+            vn2.Vorname = "Manuell zugewiesene Zahl: ";
+
+            //Zum Test wird hier auf Service zugegriffen-------------------------------------------------------------------------------------------------
+            //USMonatsPraemie = calcUS();                //In der Firma kann auf das Service zugegriffen werden
+            //vn2.Vorname = "Unfallsonderklasse aus TARIFClient(Service): ";   
+            //-------------------------------------------------------------------------------------------------------------------------------------------
+            vn2.Nachname = USMonatsPraemie.ToString() + " €";
+            
             v2.Versicherungsnehmer = vn2;
             Vertraege.Add(v2);
 
