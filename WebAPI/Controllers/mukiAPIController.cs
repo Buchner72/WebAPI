@@ -38,7 +38,8 @@ namespace WebAPI.Controllers
 
             //Zum Test wird hier auf Service zugegriffen-------------------------------------------------------------------------------------------------
             //USMonatsPraemie = calcUS();                //In der Firma kann auf das Service zugegriffen werden
-            //vn2.Vorname = "Unfallsonderklasse aus TARIFClient(Service): ";   
+            //vn2.Vorname = "Unfallsonderklasse aus TARIFClient(Service): ";  
+            //Test zum Commit 
             //-------------------------------------------------------------------------------------------------------------------------------------------
             vn2.Nachname = USMonatsPraemie.ToString() + " €";
             
